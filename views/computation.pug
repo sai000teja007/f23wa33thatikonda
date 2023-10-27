@@ -1,0 +1,14 @@
+extends layout
+block content
+ h1 RESULTS.
+    - var x = Math.floor(Math.random() * 10);
+    - var y = Math.floor(Math.random() * 10);
+    - var output1 = Math.abs (x);
+    - var output2 = Math.acos (y);
+    - var output3 = Math.sin(x);
+    - var output4 = Math.sinh(y);
+
+ p Math.abs(#{x}) is #{output1}
+ p Math.acos(#{y}) is #{output2}
+ p Math.sin(#{x}) is #{output3}
+ p Math.sinh(#{y}) is #{output4}
